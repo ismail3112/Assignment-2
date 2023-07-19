@@ -60,12 +60,17 @@ body {
     display: flex;
 }
 
+/* .banner-contant{
+    max-width: 1700px;
+    margin: 0 auto;
+} */
 .banner-left-play-section {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../images/Group\ 14.png");fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+    background-image: url("../images/Group\ 14.png");
+    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
     background-repeat: no-repeat;
 }
 
@@ -94,7 +99,8 @@ body {
     align-items: center;
     justify-content: center;
 }
-.banner-right-image img{
+
+.banner-right-image img {
     width: 600px;
     height: 60vh;
 }
@@ -116,6 +122,7 @@ body {
     border: none;
     border-radius: 48px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    color: #FFFF;
 }
 
 .button-skyblue {
@@ -123,8 +130,64 @@ body {
     border: none;
     border-radius: 48px;
     background: #4EC5F7;
+    color: #FFFF;
 }
 
+/* gamer-team-section-style */
+.gamer-team-section {
+    max-width: 100%;
+    margin: 0 auto;
+    background: url("../images/Group\ 14.png");
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.gamer-team {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}
+
+.team-image img {
+    width: 100%;
+}
+
+.team-content {
+    width: 50%;
+    text-align: end;
+    margin: auto 0;
+}
+
+.team-title {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.team-description {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.our-purpose {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.last-title {
+    color: #534C64;
+    font-size: 2rem;
+    font-weight: 700;
+}
 
 
 
@@ -143,40 +206,55 @@ body {
         justify-content: center;
     }
 
-    .banner-section{
+    .banner-section {
         flex-direction: column-reverse;
     }
 
-    .banner-left-play-section{
+    .banner-left-play-section {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 30px;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 2rem;
     }
 
-    .banner-title-goat{
+    .banner-title-goat {
         width: 100%;
         font-size: 3rem;
         padding-bottom: 25px;
     }
-    .banner-description{
+
+    .banner-description {
         font-size: 1rem;
     }
-    .button{
+
+    .button {
         padding-bottom: 50px;
         width: 100%;
     }
-    .banner-right-image{
-        width: 100%;
+
+    .banner-right-image {
+        width: 95%;
         padding-top: 50px;
     }
-    .banner-right-image img{
+
+    .banner-right-image img {
         width: 100%;
         height: 50vh;
+    }
+    .gamer-team{
+        flex-direction: column;
+    }
+    .team-content{
+        width: 100%;
+        text-align: center;
+    }
+    .team-title{
+        text-align: center;
     }
 }
 
@@ -187,20 +265,24 @@ body {
 
 /* medium-device-responsive */
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 991px) {
     .nav-section {
         width: 95%;
     }
-
-
-}
-
-/* large-device-responsive */
-
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .nav-section {
-        width: 90%;
+    .banner-right-image img {
+        width: 100%;
+        height: 50vh;
+    }
+    .gamer-team{
+        flex-direction: column;
+    }
+    .team-content{
+        width: 100%;
+        text-align: center;
+    }
+    .team-title{
+        text-align: center;
     }
 
 }
+
