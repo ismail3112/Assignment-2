@@ -8,7 +8,7 @@ body {
 /* nav-bar-style */
 
 .nav-section {
-    max-width: 1700px;
+    max-width: 1550px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -123,6 +123,7 @@ body {
     border-radius: 48px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
     color: #FFFF;
+    cursor: pointer;
 }
 
 .button-skyblue {
@@ -131,6 +132,7 @@ body {
     border-radius: 48px;
     background: #4EC5F7;
     color: #FFFF;
+    cursor: pointer;
 }
 
 /* gamer-team-section-style */
@@ -283,9 +285,114 @@ body {
     left: -80px;
 }
 
+/* games-type-section-style */
+.games-type-section {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.games-type-contaiber {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.type-1 {
+    max-width: 25%;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    gap: 5px;
+    background: #FFF;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid transparent;
+}
+
+.type-1:hover {
+    border: 2px solid #F948B2;
+    color: #F948B2;
+
+}
+
+/* footer-section-style */
+.footer-section {
+    padding-top: 80px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #0B0223;
+    padding: 150px 0px;
+    /* padding: 200px 0; */
+}
 
 
+.footer-gamer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
 
+
+.connection-section,
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+}
+
+.connection-section a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+
+/* .footer-section{
+    background-color: #0B0223;
+    height: 40vh;
+} */
+
+.tarms-section ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.tarms-section a {
+    text-decoration: none;
+    color: #ffffff84;
+    font-weight: 200;
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.connection-section ul li{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 
 
@@ -379,26 +486,61 @@ body {
         font-weight: 550;
     }
 
-    .play-games-container {
-        margin: 0 auto;
-        flex-direction: column;
-        gap: 50px;
-    }
-    .h1{
+
+
+    .h1 {
         font-size: 2rem;
         text-align: center;
     }
-    .play-games-contant{
+
+    .play-games-container{
+        flex-direction: column;
+    }
+
+    .play-games-contant {
         width: 100%;
         text-align: center;
     }
-    .play-games-image-big{
-        width: 80%;
+
+    .play-games-image-big {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 50px;
     }
-    .play-games-image-small{
+
+    .play-games-image-small {
         width: 70%;
-        padding-left: 50px;
-        padding-bottom: -30px;
+        margin-left: 60px;
+        margin-top: -80px;
+    }
+
+    .play-games-description {
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .type-1>img {
+        width: 25px;
+        height: 30px;
+    }
+
+    .type-1 {
+        width: 300px;
+        padding: 0px;
+    }
+
+    .type-1-title {
+        font-size: .5rem;
+    }
+
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px 20px;
     }
 
 }
@@ -443,4 +585,38 @@ body {
         gap: 10px;
     }
 
+    .play-games-container {
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+    }
+
+    .play-games-description {
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+
+    .play-games-image-big {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .play-games-image-small {
+        width: 70%;
+        margin-left: 20px;
+        margin-top: -80px;
+    }
+
+.connection-section ul{
+    gap: 10px;
+}
 }
