@@ -8,7 +8,7 @@ body {
 /* nav-bar-style */
 
 .nav-section {
-    max-width: 1550px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -17,9 +17,9 @@ body {
 
 .nav-item ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap:30px;
     list-style: none;
     font-weight: 600;
     color: #3C354F;
@@ -192,6 +192,7 @@ body {
 }
 
 /* online games style */
+
 .online-game-title {
     color: #0B0223;
     text-align: center;
@@ -221,7 +222,57 @@ body {
     gap: 15px;
 }
 
-/* play-games-section-style */
+
+#online-game {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+#online-game:hover .overlay {
+    opacity: 1;
+}
+
+.play-button {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+
+.text {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(29, 211, 56);
+    font-weight: 900;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+#online-game:hover .text {
+    opacity: 1;
+}
+
+
+
 
 .play-games-section {
     max-width: 1400px;
@@ -389,10 +440,20 @@ ul {
 }
 
 
-.connection-section ul li{
+.connection-section ul li {
     display: grid;
     grid-template-columns: 1fr;
 }
+
+
+.play-logo {
+    background-color: white;
+    border-radius: 60%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
 
 
 
@@ -404,6 +465,7 @@ ul {
         flex-direction: column;
         justify-content: center;
     }
+
 
     .nav-item ul {
         flex-direction: column;
@@ -493,7 +555,7 @@ ul {
         text-align: center;
     }
 
-    .play-games-container{
+    .play-games-container {
         flex-direction: column;
     }
 
@@ -536,7 +598,7 @@ ul {
         font-size: .5rem;
     }
 
-    .list{
+    .list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -616,7 +678,7 @@ ul {
         margin-top: -80px;
     }
 
-.connection-section ul{
-    gap: 10px;
-}
+    .connection-section ul {
+        gap: 10px;
+    }
 }
